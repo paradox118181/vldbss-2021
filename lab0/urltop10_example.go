@@ -38,6 +38,7 @@ func ExampleURLCountMap(filename string, contents string) []KeyValue {
 		if len(l) == 0 {
 			continue
 		}
+		//fmt.Fprintln(os.Stdout, l)
 		kvs = append(kvs, KeyValue{Key: l})
 	}
 	return kvs
